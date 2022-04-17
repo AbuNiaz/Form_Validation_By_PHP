@@ -17,9 +17,17 @@
 
     <form action="result.php" method="POST">
         Name:
-        <input type="text" name="name" value="<?php echo htmlspecialchars($name) ?>"><br><br>
+        <input type="text" name="name" value="<?php echo htmlspecialchars($name) ?>"><br>
+        <?php if(isset($name_error)){ ?>
+          <p>  <?php echo $name_error ?></p>
+            <?php } ?>
+        <br>
         Password:
-        <input type="password" name="password" value="<?php echo htmlspecialchars($pass) ?>"><br><br>
+        <input type="password" name="password" value="<?php echo htmlspecialchars($pass) ?>"><br>
+        <?php if(isset($name_error)){ ?>
+          <p>  <?php echo $name_error ?></p>
+            <?php } ?>
+        <br>
 
 
         <input type="submit" name="submit" value="Registration">
