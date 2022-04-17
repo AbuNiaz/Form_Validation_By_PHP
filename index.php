@@ -7,6 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1> Form Validation </h1>
+
+    <form action="" method="">
+        Name:
+        <input type="text" name="name" value="<?php echo htmlspecialchars($name) ?>"><br><br>
+        Password:
+        <input type="password" name="password" value="<?php echo htmlspecialchars($pass) ?>"><br><br>
+
+
+        <input type="submit" name="submit" value="Registration">
 </body>
 </html>
