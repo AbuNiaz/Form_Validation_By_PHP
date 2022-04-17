@@ -17,5 +17,6 @@
 
 
         <input type="submit" name="submit" value="Registration">
+</form>
 </body>
 </html>
