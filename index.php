@@ -21,13 +21,13 @@
         <?php if(isset($name_error)){ ?>
           <p>  <?php echo $name_error ?></p>
             <?php } ?>
-        <br>
+        <br><br>
         Password:
         <input type="password" name="password" value="<?php echo htmlspecialchars($pass) ?>"><br>
         <?php if(isset($name_error)){ ?>
           <p>  <?php echo $name_error ?></p>
             <?php } ?>
-        <br>
+        <br><br>
 
 
         <input type="submit" name="submit" value="Registration">
