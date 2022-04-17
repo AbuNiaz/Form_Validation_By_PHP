@@ -10,5 +10,5 @@ if(empty($name)){
 if(empty($pass)){
     echo $pass_error = 'Please Insert Your Name';
 }
-
+include("index.php");
 ?>
