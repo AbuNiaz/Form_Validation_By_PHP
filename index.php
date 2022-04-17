@@ -1,3 +1,9 @@
+
+<?php if(!isset($name)){
+    $name = '';
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +15,7 @@
 <body>
     <h1> Form Validation </h1>
 
-    <form action="" method="">
+    <form action="result.php" method="POST">
         Name:
         <input type="text" name="name" value="<?php echo htmlspecialchars($name) ?>"><br><br>
         Password:
