@@ -4,6 +4,10 @@ $severname = 'localhost';
 $username = 'username';
 $password = 'password';
 
-$conn = new sqli($severname);
+$conn = new sqli($severname, $username, $password);
+
+if($conn->connect_error){
+    die("Connection failed :" .$conn->connect_error);
+}
 
 ?>
