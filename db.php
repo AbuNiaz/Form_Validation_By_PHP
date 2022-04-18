@@ -16,5 +16,5 @@ if($conn->query($sql)){
 }else{
     echo "Database Error";
 }
-
+mysqli_close($conn);
 ?>
