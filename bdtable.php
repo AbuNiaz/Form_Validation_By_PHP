@@ -20,4 +20,12 @@ try {
   reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
   )";
 
+
+$conn->exec($sql);
+echo "Table MyGuests created successfully";
+} catch(PDOException $e) {
+echo $sql . "<br>" . $e->getMessage();
+}
+
+$conn = null;
 ?>
