@@ -3,6 +3,7 @@
 $severname = 'localhost';
 $username = 'username';
 $password = 'password';
+$dbname = 'students';
 
 $conn = new sqli($severname, $username, $password);
 
