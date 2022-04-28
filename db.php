@@ -18,4 +18,6 @@ if($conn->query($sql)){
     echo "Database Error";
 }
 mysqli_close($conn);
+
+include("index.php");
 ?>

@@ -29,4 +29,6 @@ echo $sql . "<br>" . $e->getMessage();
 }
 
 $conn = null;
+
+include("index.php");
 ?>
