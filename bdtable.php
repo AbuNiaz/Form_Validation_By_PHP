@@ -12,7 +12,7 @@ try {
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
   
-  $sql = "CREATE TABLE students (
+  $sql = "CREATE TABLE studentslist (
   id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   firstname VARCHAR(30) NOT NULL,
   lastname VARCHAR(30) NOT NULL,
@@ -22,7 +22,7 @@ try {
 
 
 $conn->exec($sql);
-echo "Table MyGuests created successfully";
+echo "Table studentslist created successfully";
 } catch(PDOException $e) {
   
 echo $sql . "<br>" . $e->getMessage();
